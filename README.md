@@ -1,7 +1,7 @@
 # List-Library
 
 A static C library that implements a singly linked list and various functions
-to manipulate singly linked lists such as:
+to manipulate those lists with the following functions:
 
 - Add a node to front of list with addFront().
 - Traverse nodes in list with traverseList(). 

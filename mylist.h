@@ -48,7 +48,7 @@ struct Node *addFront(struct List *list, void *data);
 
 void traverseList(struct List *list, void (*f)(void *));
 
-i/*
+/*
  * Traverse the list, comparing each data item with 'dataSought' using
  * 'compar' function.  ('compar' returns 0 if the data pointed to by
  * the two parameters are equal, non-zero value otherwise.)
@@ -57,7 +57,7 @@ i/*
  * NULL if not found.
  */
 
-#if 0
+
 struct Node *findNode(struct List *list, const void *dataSought,
 	int (*compar)(const voserid *, const void *));
 
@@ -119,23 +119,8 @@ struct Node *addAfter(struct List *list,
  * Note that this function reverses the list purely by manipulating
  * pointers.  It does NOT call malloc directly or indirectly (which
  * means that it does not call addFront() or addAfter()).
- *
- * Implementation hint: keep track of 3 consecutive nodes (previous,
- * current, next) and move them along in a while loop.  Your function
- * should start like this:
+*/
 
-
-      struct Node *prv = NULL;
-      struct Node *cur = list->head;
-      struct Node *nxt;
-
-      while (cur) {
-          ......
-
-
- * And at the end, prv will end up pointing to the first element of
- * the reversed list.  Don't forget to assign it to list->head.
- */
 void reverseList(struct List *list);
 
-#endif /* #ifndef _MYLIST_H_ */
+/* #ifndef _MYLIST_H_ */
